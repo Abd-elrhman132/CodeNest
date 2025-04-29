@@ -1,0 +1,217 @@
+.contact-section {
+  background: url("https://www.transparenttextures.com/patterns/stardust.png")
+      repeat,
+    #000;
+  padding: 6rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  margin-bottom:12rem;
+
+  @media (max-width: 1000px) {
+    padding: 4rem 1rem; /* Reduce padding on smaller screens */
+  }
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 6rem;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  max-width: 1440px; /* Set max-width to 1250px */
+  width: 100%; /* Ensure it takes full available width up to max-width */
+  margin: 0 auto;
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(126, 155, 250, 0.1),
+    rgba(167, 119, 227, 0.1)
+  );
+  padding: 2rem;
+  border-radius: 2rem;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px; /* Adjusted from 30rem to 300px for better responsiveness */
+  padding: 4rem;
+  background: url("https://www.transparenttextures.com/patterns/digital-noise.png")
+      repeat,
+    linear-gradient(145deg, rgba(126, 155, 250, 0.2), rgba(83, 0, 160, 0.2));
+  background-size: auto, cover;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(167, 119, 227, 0.3);
+  box-shadow: 0 0 2rem rgba(110, 142, 251, 0.1);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+
+  @media (max-width: 1000px) {
+    .contact-info {
+      padding: 2rem; /* Reduce padding for mobile */
+      min-width: 100%; /* Full width on smaller screens */
+    }
+  }
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+}
+
+.contact-heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #fff, #a777e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: 1000px) {
+    font-size: 3.6rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2.8rem; /* Further reduce heading size */
+  }
+}
+
+.contact-text {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 3rem;
+
+  @media (max-width: 1000px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem; /* Further reduce heading size */
+}
+}
+
+.contact-details {
+  font-size: 2rem;
+  color: #e5e5e5;
+
+  @media (max-width: 1000px) {
+    font-size: 1.6rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.4rem; 
+}
+}
+
+.contact-det {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-details p::before {
+  content: "→";
+  color: #7e9bfa;
+}
+
+.contact-form-container {
+  flex: 1;
+  min-width: 300px; /* Adjusted from 30rem to 300px for responsiveness */
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(126, 155, 250, 0.3);
+  box-shadow: 0 0 2rem rgba(110, 142, 251, 0.1);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+
+  @media (max-width: 1000px) {
+    padding: 2rem; /* Reduce padding for mobile */
+    min-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+.contact-form-container:hover {
+  transform: translateY(-5px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-input,
+.contact-textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(167, 119, 227, 0.5);
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  color: #e5e5e5;
+  font-size: 1.4rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+
+  @media (max-width: 1000px) {
+    font-size: 1.2rem;
+    padding: 1.2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem; /* Further reduce heading size */
+}
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+  border-color: #6e8efb;
+  box-shadow: 0 0 8px rgba(110, 142, 251, 0.3);
+}
+
+.contact-textarea {
+  resize: none;
+  height: 12rem;
+}
+
+.contact-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 155, 250, 0.8),
+    rgba(167, 119, 227, 0.8)
+  );
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: #e5e5e5;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @media (max-width: 1000px) {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.2rem; 
+}
+}
+
+.contact-btn:hover {
+  background: linear-gradient(90deg, #6e8efb, #a777e3);
+  box-shadow: 0 0 15px rgba(126, 155, 250, 0.3);
+}
