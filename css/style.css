@@ -705,6 +705,14 @@ body {
     z-index: -1;
   }
 }
+@media (max-width: 480px) {
+  .robot-3d {
+    scale: 0.5;
+    top: -25%;
+    right: 0;
+    z-index: -1;
+  }
+}
 
 .testimonials {
   margin: 10rem 6rem;
