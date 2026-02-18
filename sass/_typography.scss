@@ -1,0 +1,107 @@
+.heading-1 {
+  font-size: 7.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-text-main);
+  margin-bottom: 2.4rem;
+  letter-spacing: -2px;
+
+  @include respond(tab-port) {
+    font-size: 4.8rem;
+    letter-spacing: -1px;
+  }
+}
+
+.heading-2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-main);
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+
+  @include respond(tab-port) {
+    font-size: 3.6rem;
+  }
+}
+
+.heading-3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin-bottom: 1.2rem;
+}
+
+.heading-4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-primary-light); /* Accent color for subheadings */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.6rem;
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 1.7;
+  color: var(--color-text-sub);
+  max-width: 60rem;
+
+  @include respond(tab-port) {
+    font-size: 1.8rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.btn-get-started,
+.btn-get-main {
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-get-started {
+  background: var(--color-primary);
+  color: #fff;
+  border: 1px solid var(--color-primary);
+
+  &:hover {
+    background: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+  }
+}
+
+.btn-get-main {
+  background: transparent;
+  color: var(--color-text-main);
+  border: 1px solid var(--glass-border);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+  }
+}
+
+/* Tag box - Moving duplicated styles here if they are global or keeping them consistent */
+/* Since .tag-box is also in _header.scss, I will comment it out here or remove it to avoid duplication if it's already there. 
+   Checking _header.scss... yes, it is there. 
+   I'll remove it from here to avoid confusion and stick to the one in _header.scss which I already updated.
+*/
