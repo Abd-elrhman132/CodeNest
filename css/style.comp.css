@@ -640,7 +640,7 @@ body {
   .content {
     align-items: center;
     max-width: 100%;
-    order: 2;
+    order: 1;
     gap: 4rem; /* Increased spacing between text elements */
   }
 }
@@ -654,17 +654,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 @media only screen and (max-width: 56.25em) {
   .robot-3d {
-    order: 1;
-    height: 12rem; /* Tiny robot on tablet */
-    margin-bottom: 1rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .robot-3d {
-    height: 8rem; /* Even smaller on phone */
+    display: none;
   }
 }
 
